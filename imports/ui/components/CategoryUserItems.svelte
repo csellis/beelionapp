@@ -28,7 +28,7 @@
 
     Meteor.call("UserItems.togglePickItem", selected._id, (err, res) => {
       if(err) console.warn(err)
-      console.log(res)
+      // console.log(res)
     })
     // console.log(selected)
   }

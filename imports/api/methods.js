@@ -66,18 +66,18 @@ Meteor.methods({
   'UserItems.remove'(userItemId) {
     return UserItems.remove(userItemId);
   },
-  'UserItems.togglePickItem'(_id) {
-    const userItem = UserItems.findOne(_id);
-    // console.log(userItem)
-    UserItems.update({_id}, {
-      $set: {
-        picked: !userItem.picked,
-        updatedAt: new Date()
-      }
-    })
-    // const updated = UserItems.findOne(_id)
-    // console.log(updated)
-  },
+  // 'UserItems.togglePickItem'(_id) {
+  //   const userItem = UserItems.findOne(_id);
+  //   // console.log(userItem)
+  //   UserItems.update({_id}, {
+  //     $set: {
+  //       picked: !userItem.picked,
+  //       updatedAt: new Date()
+  //     }
+  //   })
+  //   // const updated = UserItems.findOne(_id)
+  //   // console.log(updated)
+  // },
   'Items.add'(name) {
     const userId = this.userId;
     // console.log({ name })

@@ -21,8 +21,6 @@
   $: userItems = useTracker(() => {
     const userItems = UserItems.find({}, {sort: { categoryRank: 1}}).fetch();
 
-
-
     const uncategorizedUserItems = userItems.filter(userItem => userItem.categoryName === "Uncategorized")
     const categorizedUserItems = userItems.filter(userItem => {
       return userItem.categoryName !== "Uncategorized";
@@ -91,9 +89,6 @@
       console.log(res)
     })
   }
-
-
-
 </script>
 
 <div class="w-full relative">

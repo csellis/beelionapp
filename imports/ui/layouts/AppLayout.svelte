@@ -12,7 +12,7 @@
   let title = "Title";
 
 // console.log(location.pathname)
-console.log(url)
+// console.log(url)
   $: user = useTracker(() => Meteor.user());
   $: userId = useTracker(() => Meteor.userId());
 
